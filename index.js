@@ -28,7 +28,13 @@ const server = http.createServer(function(request, response) {
                         <label for="html">Your age?</label><br>
                         <input type="number" name="customerAge"/><br>
                         <label for="html">Which product do you wish to buy? (A, B, C, D)</label><br>
-                        <input type="text" name="productType" /><br>
+                        <select name="productType">
+                        <option Value="A">A</option>
+                        <option Value="B">B</option>
+                        <option Value="C">C</option>
+                        <option Value="D">D</option>
+                        </select>
+                        <br>
                         <label for="html">Have you returned any items in the past?</label><br>
                         <input type=checkbox name="hasReturns" /><br>
                         <label for="html">Are you a loyalty member?</label><br>
